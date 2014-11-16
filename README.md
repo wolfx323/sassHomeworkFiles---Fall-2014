@@ -14,4 +14,10 @@ $dark: #2C3E50;
 $red: #E74C3C;  
 $white: #ECF0F1;  
 $mid: #3498DB;  
-$light: #2980B9;  
+$light: #2980B9;
+
+NEW CSS RULE?  
+-webkit-border-radius: $radius;  
+-moz-border-radius: $radius;  
+-ms-border-radius: $radius;  
+border-radius: $radius;  
