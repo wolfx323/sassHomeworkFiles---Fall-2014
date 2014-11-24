@@ -1,0 +1,157 @@
+$dark: #2C3E50;  
+$red: #E74C3C;  
+$white: #ECF0F1;  
+$mid: #3498DB;  
+$light: #2980B9;
+$radius: 8px;
+$Case: uppercase;
+
+@import "text";
+@import "layout";
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+img {@include border-radius (25px);}
+
+h1 {
+	color: $red; 
+	font-size: 3em;
+	width: 300px;
+	text-transform: $Case;
+	}
+
+header  {
+	h1 {color: $white;}
+	h2 {font-family: Times New Roman, serif;
+	font-size: 14px;}
+
+nav {
+	ul {list-style: none;
+	font-size: 1em;
+	margin: 0;
+	padding: .3em;
+		li {background-color: $mid;
+		border-radius: $radius;
+		padding: 10px;
+		float: left;
+		margin-right: 10px;
+		font-weight: bold;
+		}
+	}
+	margin-bottom: 20px;
+	
+}
+}
+
+
+a:link {
+	color: $dark;
+	text-decoration: none;
+	}
+
+a:hover {
+	color: $red;
+	text-decoration: none;
+	}
+
+a:visited {
+	color: $dark;
+	text-decoration: none;
+	}
+
+a:active {
+	color: $dark;
+	text-decoration: none;
+	}
+
+
+article {
+	margin: 5px auto 20px auto;
+	padding-bottom: 10px;
+	background-color: $mid;
+	border-radius: $radius; 
+	header {
+	border-radius: $radius;
+	h2 {margin-left: 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 2em;}
+	h3 {margin-left: 10px;
+		margin-top: 0px;}
+	} 
+	}
+
+
+section {
+		h1 {background-color: $white;
+	border-radius: $radius;
+	margin-bottom: 15px;
+	width: 100%;}
+	}
+
+footer  {
+	display: inline;
+	position: absolute;
+	left: 0px;
+	font-family: Times New Roman, serif;
+	position: relative;
+	top: 0px;
+	bottom: 0px;
+	text-align: center;
+	h1 {font-size: 12pt;
+	font-family: Helvetica, Arial, sans-serif;
+	text-transform: lowercase;
+	color: $white;
+	clear: both;
+	display: inline;
+	}
+	h2 {font-size: 12pt;
+		font-color: $white;
+		clear: both;
+		display: inline;
+		font-family: Helvetica, Arial, sans-serif;
+		}
+	
+	ul {
+	float: right;
+	clear: both;
+	margin: 0px;
+	display: inline;
+	list-style: none;
+	color: $white;
+	clear: both;
+	li {font-size: 12pt;
+	color: $white;
+	display: inline;
+	clear: both;
+	margin: 15px;}
+	a:link {
+	color: $white;
+	text-decoration: none;
+	}
+
+a:hover {
+	color: $red;
+	text-decoration: none;
+	}
+
+a:visited {
+	color: $white;
+	text-decoration: none;
+	}
+
+a:active {
+	color: $white;
+	text-decoration: none;
+	}
+
+	}
+	}
